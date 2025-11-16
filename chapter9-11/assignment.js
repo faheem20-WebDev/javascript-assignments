@@ -148,7 +148,6 @@ if(gnum+1===n){
 alert("Close Enough To the correct answer");
 }
 
-
 // question no 08 
 var d=prompt("Enter Number");
 var delta=parseInt(d);
