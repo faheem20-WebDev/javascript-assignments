@@ -1,0 +1,30 @@
+{
+    // General editor suggestions
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+
+    // Disable inline suggestions (like Copilot or AI) globally
+    "editor.inlineSuggest.enabled": false,
+
+    // Language-specific overrides
+    "[javascript]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false
+    },
+    "[html]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.suggestOnTriggerCharacters": true
+    }
+}
