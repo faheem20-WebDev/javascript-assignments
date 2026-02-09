@@ -1,71 +1,71 @@
 // task 01
-// function displayDateTime(){
-//     const now=new Date();
-//     const year=now.getFullYear();
-//     const month=String(now.getMonth()+1).padStart(2,'0');
-//     const day=String(now.getDate()).padStart(2,'0');
-//     const hours=String(now.getHours()).padStart(2,'0');
-//     const minutes=String(now.getMinutes()).padStart(2,'0');
-//     const seconds=String(now.getSeconds()).padStart(2,'0');
-//     console.log(`Current Date and Time: ${year}-${month}-${day} ${hours}:${minutes}:${seconds}`);
-// }
+function displayDateTime(){
+    const now=new Date();
+    const year=now.getFullYear();
+    const month=String(now.getMonth()+1).padStart(2,'0');
+    const day=String(now.getDate()).padStart(2,'0');
+    const hours=String(now.getHours()).padStart(2,'0');
+    const minutes=String(now.getMinutes()).padStart(2,'0');
+    const seconds=String(now.getSeconds()).padStart(2,'0');
+    console.log(`Current Date and Time: ${year}-${month}-${day} ${hours}:${minutes}:${seconds}`);
+}
 
 
-// displayDateTime();
+displayDateTime();
 
 // task 02
-// function greetUser(){
-//     let firstName=prompt("Enter Your First Name");
-//     let secondName=prompt("Enter Second Name");
-//     let fullName=(firstName+" "+secondName);
-//     console.log("Welcome  " + fullName);
-// }
-// greetUser();
+function greetUser(){
+    let firstName=prompt("Enter Your First Name");
+    let secondName=prompt("Enter Second Name");
+    let fullName=(firstName+" "+secondName);
+    console.log("Welcome  " + fullName);
+}
+greetUser();
 
 
-// // task 03
-// function addTwoNumbers(){
-//     let firstNumber=prompt("Enter First Number");
-//     let secondNumber=prompt("Enter Second Nubmer");
-//        let sum=Number(firstNumber)+Number(secondNumber);
-//     alert("Sum of Two numbers is "+sum);
-// }
-// addTwoNumbers();
+// task 03
+function addTwoNumbers(){
+    let firstNumber=prompt("Enter First Number");
+    let secondNumber=prompt("Enter Second Nubmer");
+       let sum=Number(firstNumber)+Number(secondNumber);
+    alert("Sum of Two numbers is "+sum);
+}
+addTwoNumbers();
 
 // task 04
-// function calculateResult(number1,number2,operator){
-//     if(operator=="+"){
-//         let sum=number1+number2;
-//         alert("The sum of two Numbers is "+sum);
+function calculateResult(number1,number2,operator){
+    if(operator=="+"){
+        let sum=number1+number2;
+        alert("The sum of two Numbers is "+sum);
         
-//     }
-//     else if(operator=="-"){
-//         let difference=number1-number2;
-//         alert("The difference of two Numbers is "+difference);
+    }
+    else if(operator=="-"){
+        let difference=number1-number2;
+        alert("The difference of two Numbers is "+difference);
         
-//     }
-//     else if(operator=="*"){
-//         let multiplication=number1+number2;
-//         alert("The multiplication of two Numbers is "+multiplication);
+    }
+    else if(operator=="*"){
+        let multiplication=number1+number2;
+        alert("The multiplication of two Numbers is "+multiplication);
         
-//     }
-//     else if(operator=="/"){
-//         if(number1===0){
-//             alert("Result is infinity");
-//         }
-//         else {
-//         let quotient=number1/number2;
-//         alert("The sum of two Numbers is "+quotient);
-//         }
-//     }
-//     else{
-//         alert("Please Choose Correct Operator")
-//     }
-// }
-// let num1=Number(prompt("Number1"));
-// let num2=Number(prompt("Number 2"));
-// let op=prompt("Enter operator");
-// calculateResult(num1,num2,op);
+    }
+    else if(operator=="/"){
+        if(number1===0){
+            alert("Result is infinity");
+        }
+        else {
+        let quotient=number1/number2;
+        alert("The sum of two Numbers is "+quotient);
+        }
+    }
+    else{
+        alert("Please Choose Correct Operator")
+    }
+}
+let num1=Number(prompt("Number1"));
+let num2=Number(prompt("Number 2"));
+let op=prompt("Enter operator");
+calculateResult(num1,num2,op);
 
 
 // task 05
@@ -123,29 +123,29 @@ console.log("The Area of Rectangle is "+funCall+"cm\u00B2");
 // task 10
 // program to check if the string is palindrome or not
 
-// function checkPalindrome(string) {
+function checkPalindrome(string) {
 
-//     // find the length of a string
-//     const len = string.length;
+    // find the length of a string
+    const len = string.length;
 
-//     // loop through half of the string
-//     for (let i = 0; i < len / 2; i++) {
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
 
-//         // check if first and last string are same
-//         if (string[i] !== string[len - 1 - i]) {
-//             return 'It is not a palindrome';
-//         }
-//     }
-//     return 'It is a palindrome';
-// }
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
 
-// // take input
-// const string = prompt('Enter a string: ');
+// take input
+const tring = prompt('Enter a string: ');
 
-// // call the function
-// const value = checkPalindrome(string);
+// call the function
+const value = checkPalindrome(tring);
 
-// console.log(value);
+console.log(value);
 
 
 // task 11
